@@ -16,9 +16,9 @@ public class AddressService {
     private int idCounter = 1;
 
     public AddressModel createContact(AddressDTO dto) {
-        AddressModel model = mapper.dtoToModel(idCounter++, dto);
-        contactList.add(model);
-        return model;
+        AddressModel contact = mapper.dtoToModel(idCounter++, dto);
+        contactList.add(contact);
+        return contact;
     }
 
     public List<AddressModel> getAllContacts() {
@@ -44,7 +44,6 @@ public class AddressService {
     }
 
     public boolean deleteContact(int id) {
-        return contactList.removeIf(c -> c.getId() == id);
+        return contactList.removeIf(contact -> contact.getId() == id);
     }
-
 }
