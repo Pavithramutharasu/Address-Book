@@ -1,4 +1,4 @@
-package com.bridgelaz.employeepayroll;
+package com.bridgelaz.addressbook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
